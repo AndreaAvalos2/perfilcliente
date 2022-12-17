@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Cliente</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+
+     <!--Google Fonts-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <!--Link para importar el estilo de la fuente-->
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+
+
+    <nav>
+        <div class="logo">
+            <img src="img/logo guarú .jpeg" width="90px" height="90px">
+        </div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-cart-shopping"></a></i></li>
+            <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            
+        </ul>
+    </nav>
+
+
+    <!--Foto Cliente-->
+    <section class="contenedorFoto">
+        <div class="Foto">
+            <figure> 
+                <div class="capa">
+                    <h3>Mi perfil</h3>
+                    <div class="file-select" id="archivo">
+                        <input type="file" name="archivo" aria-label="Archivo"/>
+                    </div>
+                    <div>
+                        <img src="" id="preview" >
+                    </div>
+                   
+                </div>
+            </figure>
+        </div>
+
+     <section class="Datos">
+        <h1>Mi Perfil</h1>
+        <h2>Información</h2>
+        <h4>Nombre</h4>
+        <!--Aqui va el nombre de la base de datos-->
+        <h4>Apellido</h4>
+        <h4>Correo</h4>
+        <h4>Fecha de nacimiento</h4>
+        <h4>Pais</h4>
+        <h4>Ciudad</h4>
+        <a href="#" class="cta">Editar</a>
+    </section>
+
+    <!--Modal-->
+
+    <div class="modal-container">
+        <div class="modal modal-close">
+            <p class="close">X</p>
+                <form id="form" class="form" action="">
+
+                    <div class="form-control">
+                        <label for="username">Nombre:</label>
+                        <input type="text" placeholder="Nombre" maxlength="24" id="username">
+                        
+                    </div>
+
+                    <div class="form-control">
+                        <label for="username">Apellido:</label>
+                        <input type="text" placeholder="Apellido" maxlength="34" id="apellido">
+                       
+                    </div>
+                     
+                    <div class="form-control">
+                        <label for="username" class="correo">Correo:</label>
+                        <input type="email" placeholder="Correo" maxlength="34" id="email">
+                       
+                    </div>
+                       
+                    <div class="form-control">
+                        <label class="pais">País:</label>
+                        <input type="text" placeholder="País" maxlength="34" id="pais">
+                    
+                    </div>
+
+                    <div class="form-control">
+                        <label class="ciudad">Ciudad</label>
+                        <input type="text" placeholder="Ciudad" maxlength="34" id="ciudad">
+            
+                    </div>
+                        <button id="guardar">Guardar</button>
+                    </div>
+                </form>
+               
+        </div>
+
+    </div>
+
+    </section> 
+
+    <!--Seccion de descripción-->
+    <section class="pedidos">
+        <h3>Mis pedidos</h3>
+        <div class="menunavp">     
+            <div class="submenu">
+                <ul>
+                    <li><a href="#">Pedidos</a></li>
+                    <li><a href="#">Comprar de nuevo</a></li>
+                    <li><a href="#">Pedidos Cancelados</a></li>
+                  
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <h3>Favoritos</h3>
+    <section class="Contenedor2">
+        <div class="ventas">
+            
+            <div class="Imagen">
+                <img src="img/mezcal cafe.jpeg" class="imgVenta">
+            </div>
+    
+        </div>
+
+        <div class="ventas">
+            <div class="Imagen">
+                <img src="img/mezcal coco.jpeg" class="imgVenta">
+            </div>
+    
+        </div>
+
+        <div class="ventas">
+
+            <div class="Imagen">
+                <img src="img/mezcal6.jpeg" class="imgVenta">
+            </div>
+    
+        </div>
+
+        <div class="ventas">
+    
+            <div class="Imagen">
+                <img src="img/mezcal9.jpeg" class="imgVenta">
+            </div>
+    
+        </div>
+
+    </section>
+
+
+    <script src="/controlar/perfil.js"></script>
+    <script src="/controlar/main.js"></script>
+    <script src="/controlar/app.js"></script>
+    <script src="https://kit.fontawesome.com/c204debd40.js" crossorigin="anonymous"></script>
+   
+
+</body>
+</html>
